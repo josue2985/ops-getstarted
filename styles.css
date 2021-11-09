@@ -194,7 +194,7 @@ footer {
   }
 }
 .side-bar-menu ul li a:active {
-  color:red;
+  color: red;
 }
 .title-box .reg-subtitle {
   font-size: 1.2em;
@@ -407,4 +407,67 @@ footer {
 .content-anchors .logo-products {
   width: 200px;
   margin-bottom: 2em;
+}
+
+.hide-mobile {
+  display: block;
+}
+
+@media (max-width: 641px) {
+  .hide-mobile {
+    display: none;
+  }
+  #app-content {
+    height: 100%;
+    overflow: auto;
+  }
+
+  #userInfo {
+    margin: 0;
+  }
+
+  .user-info-head {
+    margin-top: 0;
+  }
+  .form-container {
+    max-height: 100%;
+    overflow: auto;
+  }
+  header {
+    height: auto;
+    text-align: center;
+  }
+  .overview-head {
+    float: inherit;
+    text-align: center;
+    margin-top: 7px;
+  }
+  .reg-title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .reg-subtitle {
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .title-box .img-container {
+    height: 87px;
+  }
+  .title-box .img-container img {
+    margin-top: 1em;
+  }
+  .content-anchors .webinar-box,
+  .content-anchors .video-box {
+    width: 100%;
+  }
+  .content-anchors .webinar-box .footer {
+    flex-direction: column;
+  }
+  .content-anchors .webinar-box .content .cta-tag,
+  .content-anchors .video-box .content .cta-tag {
+    padding: 10px 17px;
+  }
+  .content-anchors .customer-support-tag {
+    width: 80%;
+  }
 }
