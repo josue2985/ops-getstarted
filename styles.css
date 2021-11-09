@@ -315,6 +315,11 @@ footer {
   border-radius: 5px;
 }
 
+.content-anchors .webinar-box .content .cta-tag a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .content-anchors .webinar-box .content .cta-tag.link,
 .content-anchors .video-box .content .cta-tag.link {
   cursor: pointer;
@@ -375,7 +380,7 @@ footer {
 }
 
 .content-anchors .customer-support-tag {
-  width: 50%;
+  width: 40%;
   border: 1px solid #00507d;
   border-radius: 10px;
   padding: 10px 30px;
@@ -389,10 +394,11 @@ footer {
 
 .content-anchors .important-box {
   width: 100%;
-  border: 1px solid red;
+  border: 1px solid #747474;
   padding: 10px 30px;
   margin-top: 2em;
   margin-bottom: 2em;
+  background: #efefef;
 }
 
 .content-anchors .important-box p {
@@ -411,6 +417,28 @@ footer {
 
 .hide-mobile {
   display: block;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.section li:before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg viewBox='0 0 15.076 12.981' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='translate(17.576 -9.102) rotate(90)' fill='%23e46015'%3E%3Cpath transform='translate(0 -35.923)' d='m9.1 51.706 1.794 1.794 4.7-4.7 4.7 4.7 1.793-1.793-6.495-6.507z' data-name='Path 251'/%3E%3Cpath d='m9.1 8.99 1.794 1.81 4.7-4.7 4.7 4.7 1.789-1.81-6.491-6.49z' data-name='Path 252'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.7em;
+  position: relative;
+  top: 3px;
+}
+
+.section {
+  line-height: 2;
 }
 
 @media (max-width: 641px) {
