@@ -203,7 +203,7 @@ footer {
 }
 
 .title-box .img-container {
-  height: 145px;
+  height: auto;
   overflow: hidden;
 }
 
@@ -469,5 +469,10 @@ footer {
   }
   .content-anchors .customer-support-tag {
     width: 80%;
+  }
+  .registration-header {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 8px;
   }
 }
