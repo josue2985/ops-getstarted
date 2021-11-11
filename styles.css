@@ -254,7 +254,7 @@ footer {
 
 .side-bar-menu ul {
   list-style-type: none;
-  padding-left: 16px;
+  padding-left: 55px;
 }
 
 .side-bar-menu ul li:not(:last-child) {
@@ -263,6 +263,7 @@ footer {
 
 .side-bar-menu ul li a {
   color: #000;
+  text-indent: -59px;
 }
 
 .side-bar-menu ul li a.active {
@@ -387,7 +388,7 @@ footer {
   padding: 10px 30px;
   margin-top: 2em;
   margin-bottom: 2em;
-  transition:all 240ms ease-out;
+  transition: all 240ms ease-out;
 }
 
 .content-anchors .customer-support-tag:hover {
