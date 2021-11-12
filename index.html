@@ -216,7 +216,7 @@
                       <li>
                         Go to your
                         <a
-                          href="./img/tp_account_settings.mp4"
+                          href="https://v3.opstrax.com/traxpartners/#/partners"
                           target="_blank"
                           >TraxPartner</a
                         >
@@ -251,7 +251,7 @@
                         <video
                           controls
                           id="video1"
-                          src="./img/tp_invite_partner.mp4"
+                          src="./img/tp_account_settings.mp4"
                         ></video>
                         <div
                           id="step3-play-btn"
@@ -312,7 +312,7 @@
                         <video
                           controls
                           id="video2"
-                          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                          src="./img/tp_invite_partner.mp4"
                         ></video>
                         <div
                           id="step4-play-btn"
@@ -406,6 +406,21 @@
       src="https://cdn.opstrax.com/lib/bootstrap-4.0.0/js/bootstrap.min.js"
     ></script>
     <script>
+      var video1 = document.getElementById('video1');
+      let playbutton1 = document.getElementById("step3-play-btn");
+
+      var video2 = document.getElementById('video2');
+      let playbutton2 = document.getElementById("step4-play-btn");
+
+      video1.addEventListener('pause', function() {
+        playbutton1.style.display = "flex";
+      });
+
+      video2.addEventListener('pause', function() {
+        playbutton2.style.display = "flex";
+      });
+
+
       function playVideoStep3() {
         let video = document.getElementById("video1");
         let playbutton1 = document.getElementById("step3-play-btn");
