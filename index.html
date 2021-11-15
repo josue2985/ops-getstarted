@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>OPS Get Started</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navigation-sticky" data-offset="15">
     <header>
       <div class="row">
         <div class="col-md-9">
@@ -57,16 +57,11 @@
             </div>
           </div>
 
-          <div
-            data-spy="scroll"
-            data-target="#navbar"
-            data-offset="0"
-            class="form-container"
-          >
+          <div class="form-container">
             <div class="row">
-              <div class="col-sm-3 col-md-3 hide-mobile">
+              <div id="navigation-sticky" class="col-sm-3 col-md-3 hide-mobile">
                 <div id="navbar" class="side-bar-menu">
-                  <div class="make-me-sticky">
+                  <div class="">
                     <h3>Online Training and Resource Info</h3>
                     <div class="separator-line"></div>
                     <div class="section-title">Trainings</div>
@@ -103,7 +98,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-9 col-md-9">
+              <div class="col-sm-9 col-md-9 offset-lg-3">
                 <div class="content-anchors">
                   <div class="section" id="step1">
                     <h1>
@@ -427,6 +422,22 @@
         video.play();
         playbutton1.style.display = "none";
       }
+
+      // Check for global scroll instead of nested scroll
+
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 218) {
+            document
+              .getElementById("navigation-sticky")
+              .classList.add("position-fixed", "make-me-sticky");
+          } else {
+            document
+              .getElementById("navigation-sticky")
+              .classList.remove("position-fixed", "make-me-sticky");
+          }
+        });
+      });
     </script>
   </body>
 </html>
