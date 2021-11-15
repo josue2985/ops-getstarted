@@ -104,7 +104,7 @@ header {
   width: 100%;
   background: #fff;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
-  padding: 24px 32px 4px 32px;
+  padding: 8px 32px 4px 32px;
   margin-top: -100px;
   box-sizing: border-box;
   -webkit-border-radius: 2px;
@@ -122,7 +122,7 @@ header {
 
 .form-container {
   background: #fff;
-  padding: 16px 32px 32px 32px;
+  padding: 26px 32px 32px 32px;
   max-height: calc(100vh - 185px);
   width: 100%;
   overflow-x: hidden;
@@ -175,17 +175,23 @@ footer {
  * Custom Styles for this section
  */
 
-.title-box {
+/* .title-box {
   background: #00507d;
+} */
+
+.user-info-head.valign-center {
+  display: block;
+  align-items: center;
 }
 
 .title-box .row {
-  padding: 20px 20px;
+  padding: 20px 0px;
+  border-bottom: 3px solid #00507d;
 }
 
 .title-box .reg-title {
-  font-size: 3em;
-  color: white;
+  font-size: 2.3em;
+  color: #00507d;
 }
 
 @media screen and (max-width: 1500px) {
@@ -199,7 +205,7 @@ footer {
 .title-box .reg-subtitle {
   font-size: 1.2em;
   font-weight: 500;
-  color: white;
+  color: #000000;
 }
 
 .title-box .img-container {
@@ -254,7 +260,8 @@ footer {
 
 .side-bar-menu ul {
   list-style-type: none;
-  padding-left: 55px;
+  padding-left: 60px;
+  padding-right: 10px;
 }
 
 .side-bar-menu ul li:not(:last-child) {
@@ -263,7 +270,9 @@ footer {
 
 .side-bar-menu ul li a {
   color: #000;
-  text-indent: -59px;
+  display: block;
+  padding: 0;
+  text-indent: -27px;
 }
 
 .side-bar-menu ul li a.active {
@@ -274,6 +283,26 @@ footer {
 .side-bar-menu ul li a:hover {
   text-decoration: none;
   color: #e46015;
+}
+
+.side-bar-menu li a:before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg viewBox='0 0 15.076 12.981' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='translate(17.576 -9.102) rotate(90)' fill='%23e46015'%3E%3Cpath transform='translate(0 -35.923)' d='m9.1 51.706 1.794 1.794 4.7-4.7 4.7 4.7 1.793-1.793-6.495-6.507z' data-name='Path 251'/%3E%3Cpath d='m9.1 8.99 1.794 1.81 4.7-4.7 4.7 4.7 1.789-1.81-6.491-6.49z' data-name='Path 252'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.7em;
+  position: relative;
+  top: 3px;
+}
+
+.side-bar-menu .section-title {
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-left: 1em
 }
 
 .content-anchors h1 {
